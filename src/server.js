@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 import { sql } from "./config/db.js";//this will import the sql instance from the db.js file that will be used to connect to the database
 import rateLimiterMiddleware from "./middleware/rate-limiter.js";//this will import the ratelimiter middleware from the rate-limiter.js file that will be used to limit the number of requests to the server
 import transactionsRoute from "./routes/transactionsRoute.js";//this will import the transactionsRoute from the transactionsRoute.js file that will be used to handle all the routes for the transactions
-import job from "./cron.js";//this will import the cron job that will send a GET request to the server every 14 minutes
+import job from "./config/cron.js";//this will import the cron job that will send a GET request to the server every 14 minutes
 
 
 
